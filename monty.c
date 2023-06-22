@@ -2,12 +2,17 @@
 
 
 /**
-* opcode_finder - find opcode
-* @stack: stack pointer
-* @opcode: user input opcode
-* @line_number: line number
-* Return: Always 1 (Success) or stderr
-**/
+* find_opcode - find opcode
+* @stack: pointer
+* @opcode: input
+* @line_number: line
+* Return: Always 1 / stderr
+*
+*
+*
+*
+*
+*/
 int find_opcode(stack_t **stack, char *opcode, int line_number)
 {
 instruction_t opcodes[] = {
@@ -18,13 +23,13 @@ instruction_t opcodes[] = {
 {NULL, NULL}
 };
 
-int i;
+int x;
 
-for (i = 0; opcodes[i].opcode; i++)
+for (x = 0; opcodes[x].opcode; x++)
 {
-if (strcmp(opcode, opcodes[i].opcode) == 0)
+if (strcmp(opcode, opcodes[x].opcode) == 0)
 {
-(opcodes[i].f)(stack, line_number);
+(opcodes[x].f)(stack, line_number);
 return (EXIT_SUCCESS);
 }
 }
@@ -34,11 +39,16 @@ exit(EXIT_FAILURE);
 
 
 /**
-* main - Process Monty byte codes from a file passed in as an argument
+* main - Process byte codes
 * @argc: size of argv
-* @argv: A double pointer contain the arguments
-* Return: EXIT_SUCCESS if no errors or EXIT_FAILURE
-**/
+* @argv: double poin
+* Return: EXIT_SUCCESS
+*
+*
+*
+*
+*
+*/
 
 int main(__attribute__((unused)) int argc, char const *argv[])
 {
@@ -87,9 +97,14 @@ return (0);
 }
 
 /**
-* free_stack - fff
-* @stack: fff
-**/
+* free_stack - frees stack
+* @stack: pointer
+*
+*
+*
+*
+*
+*/
 void free_stack(stack_t *stack)
 {
 stack_t *next;
