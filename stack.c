@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
-*pall - print stack
+*stack - print stack
 *@line_number: www
 *@stack: pointer
 *Return: Nothing
@@ -12,7 +12,7 @@
 *
 *
 */
-void pall(stack_t **stack, unsigned int __attribute__((unused)) line_number)
+void stack(stack_t **stack, unsigned int __attribute__((unused)) line_number)
 {
 stack_t *current = *stack;
 
