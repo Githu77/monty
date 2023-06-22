@@ -1,12 +1,18 @@
 #include "monty.h"
 #include <string.h>
 /**
-*push - add a neode in the list
-*@stack: pointer to a pointer to the doubly linked list
-*@line_number: line where there is an error
+*add - add node
+*@stack: pointer
+*@line_number: line with weather
 *Return: nothing
+*
+*
+*
+*
+*
+*
 */
-void push(stack_t **stack, char *n, unsigned int line_number)
+void add(stack_t **stack, char *n, unsigned int line_number)
 {
 	stack_t *new = NULL;
 	int i;

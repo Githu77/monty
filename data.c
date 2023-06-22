@@ -1,11 +1,16 @@
 #include "monty.h"
 /**
-*pint - print the data at the top
-*@stack: double pointer th the head
-*@line_number: number of lines
+*data - print data
+*@stack: double pointer
+*@line_number: how many lines
 *Return: nothing
+*
+*
+*
+*
+*
 */
-void pint(stack_t **stack, unsigned int __attribute__((unused)) line_number)
+void data(stack_t **stack, unsigned int __attribute__((unused)) line_number)
 {
 if (stack == NULL || *stack == NULL)
 {

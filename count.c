@@ -1,20 +1,27 @@
 #include "monty.h"
 
 /**
-* len - length of stack
-* @stack: pointer that point to stack
+* count - length
+* @stack: pointer
 * Return: unsigned int
-**/
-unsigned int len(stack_t **stack)
+*
+*
+*
+*
+*
+*
+*
+*/
+unsigned int count(stack_t **stack)
 {
 stack_t *current;
-unsigned int l = 0;
+unsigned int x = 0;
 
 current = *stack;
 while (current)
 {
 current = current->next;
-l++;
+x++;
 }
 return (l);
 }
