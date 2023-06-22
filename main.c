@@ -101,5 +101,3 @@ free(stack);
 stack = next;
 }
 }
-Footer
-
