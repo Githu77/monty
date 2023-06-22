@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
-*nop - function to do nothing
+*nothing - function to do nothing
 *@stack: pointer
 *@line_number: how many lines
 *Return: nothing
