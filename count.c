@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
 * count - length
 * @stack: pointer
@@ -15,13 +14,13 @@
 unsigned int count(stack_t **stack)
 {
 stack_t *current;
-unsigned int x = 0;
+unsigned int l = 0;
 
 current = *stack;
 while (current)
 {
 current = current->next;
-x++;
+l++;
 }
-return (x);
+return (l);
 }

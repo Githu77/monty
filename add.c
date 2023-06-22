@@ -1,7 +1,7 @@
 #include "monty.h"
 #include <string.h>
 /**
-*add - add node
+*push - add node
 *@stack: pointer
 *@line_number: line with weather
 *Return: nothing
@@ -12,7 +12,7 @@
 *
 *
 */
-void add(stack_t **stack, char *n, unsigned int line_number)
+void push(stack_t **stack, char *n, unsigned int line_number)
 {
 	stack_t *new = NULL;
 	int i;
