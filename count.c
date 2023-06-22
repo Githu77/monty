@@ -23,5 +23,5 @@ while (current)
 current = current->next;
 x++;
 }
-return (l);
+return (x);
 }

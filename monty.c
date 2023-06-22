@@ -16,10 +16,10 @@
 int find_opcode(stack_t **stack, char *opcode, int line_number)
 {
 instruction_t opcodes[] = {
-{"pall", pall},
-{"pop", pop},
+{"stck", stck},
+{"rem", rem},
 {"swap", swap},
-{"pint", pint},
+{"data", data},
 {NULL, NULL}
 };
 
@@ -80,7 +80,7 @@ continue;
 else if (!strcmp(opcode, "push"))
 {
 n = strtok(NULL, DELIMATOR);
-push(&stack, n, line_number);
+add(&stack, n, line_number);
 }
 else
 find_opcode(&stack, opcode, line_number);

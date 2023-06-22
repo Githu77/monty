@@ -1,11 +1,16 @@
 #include "monty.h"
 /**
- *pop - removes the last inserted element
- *@line_number: number of lines  in the file
- *@stack: pointer to the pointer to the head
- *Return: nothing
+*pop - removes element
+*@line_number: lines
+*@stack: pointer to the pointer to the head
+*
+*
+*
+*
+*
+
  */
-void pop(stack_t **stack, unsigned int line_number)
+void rem(stack_t **stack, unsigned int line_number)
 {
 stack_t *to_the_end;
 if (stack == NULL)

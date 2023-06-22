@@ -12,7 +12,7 @@
 *
 *
 */
-void stack(stack_t **stack, unsigned int __attribute__((unused)) line_number)
+void stck(stack_t **stack, unsigned int __attribute__((unused)) line_number)
 {
 stack_t *current = *stack;
 
