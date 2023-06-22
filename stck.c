@@ -1,4 +1,5 @@
 #include "monty.h"
+/**
 *pall - print stack
 *@line_number: www
 *@stack: pointer
